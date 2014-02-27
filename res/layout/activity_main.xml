@@ -9,15 +9,19 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
-    <com.example.drawtest.SampleView
+    <com.example.drawtest.CustomWaveformView
+        android:id="@+id/sampleView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true" />
+
+    <SeekBar
+        android:id="@+id/seekBar_Progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sampleView1"
+        android:layout_marginTop="39dp" />
 
 </RelativeLayout>
